@@ -1,0 +1,22 @@
+@import "../../styles/variables";
+
+.Button {
+    margin: 20px;
+
+    button {
+        width: 180px;
+        height: 42px;
+        background: linear-gradient(90deg, $Lime-Green, $Bright-Cyan);
+        border: none;
+        border-radius: 22px;
+        font-family: $Public-Sans-Regular;
+        font-weight: 700;
+        margin-left: -20px;
+        font-size: 16px;
+        color: $White;
+        cursor: pointer;
+    }
+    &:hover {
+        opacity: 0.8;
+    }
+}

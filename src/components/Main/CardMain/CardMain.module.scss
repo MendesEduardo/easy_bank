@@ -1,0 +1,23 @@
+@import "../../../styles/variables";
+
+.cardMain {
+    display: flex;
+    gap: 1em;
+    list-style: none;
+
+    li {
+        height: 300px;
+        margin: 2em 0 0 -2em;
+        width: 25%;
+    }
+
+    &__title {
+        color: $Black;
+    }
+
+    &__paragraph {
+        color: $cor-texto-secondary;
+        font-size: 18px;
+        width: 270px;
+    }
+}

@@ -1,0 +1,15 @@
+@import "../../styles/variables";
+
+.header {
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: $White;
+    height: 60px;
+    position: relative;
+
+    &__imagem {
+        height: 25px;
+    }
+}

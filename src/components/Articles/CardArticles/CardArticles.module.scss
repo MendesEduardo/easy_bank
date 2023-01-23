@@ -1,0 +1,44 @@
+@import "../../../styles/variables";
+
+.cardArticles {
+    list-style: none;
+    display: flex;
+    width: 25%;
+
+    li {
+        height: 400px;
+        margin: 0 1em 0 -2em;
+    }
+
+    &__imagem {
+        width: 300px;
+        height: 150px;
+        border-radius: 5px;
+    }
+
+    &__title {
+        color: $Black;
+        font-weight: 300;
+        padding: 0 1em;
+        margin-bottom: -0.5em;
+    }
+
+    &__title:hover {
+        color: $Dark-Blue;
+        cursor: pointer;
+    }
+
+    &__paragraph1 {
+        color: $cor-texto-secondary;
+        font-size: 12px;
+        padding: 0 1.5em;
+        margin-bottom: -1em;
+    }
+
+    &__paragraph {
+        color: $cor-texto-secondary;
+        font-size: 18px;
+        width: 270px;
+        padding: 0 1em;
+    }
+}

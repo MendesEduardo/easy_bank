@@ -1,0 +1,28 @@
+@import "../../../styles/variables";
+
+.navbar {
+
+  ul {
+    list-style: none;
+  }
+
+  li { 
+      display: inline-block;
+  }
+
+  a {
+    display: inline-block;
+    margin:0 20px;
+    padding: 15px 0 15px 0;
+    text-decoration: none;
+    font-size: 20px;
+    color: $cor-texto-secondary;
+  &:hover {
+    border-bottom: 4px solid transparent;
+    border-image: linear-gradient(to right, $Lime-Green, $Bright-Cyan);
+    border-image-slice: 1;
+    margin-bottom: -5px;
+    color: $Black;
+  }
+  }
+}

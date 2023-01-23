@@ -1,0 +1,19 @@
+@import "../../styles/variables";
+
+.main {
+    background: $bg-primary;
+    padding: 4em 1em;
+    margin-top: -8em;
+    line-height: 1em;
+    
+    &__title {
+        font-size: 42px;
+        font-weight: 300;
+        color: $Black;
+    }
+
+    &__paragraph {
+        color: $cor-texto-secondary;
+        font-size: 18px;
+    }
+}

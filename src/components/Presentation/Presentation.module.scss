@@ -1,0 +1,37 @@
+@import "../../styles/variables";
+
+.section {
+    display: flex;
+    justify-content: center;
+
+    &__presentation {
+        margin-top: 5em;
+        color: $Black;
+    }
+    &__title {
+        width: 400px;
+        font-size: 52px;
+        font-weight: 300;
+        color: $Black;
+    }
+
+    &__paragraph {
+        width: 450px;
+        font-size: 18px;
+        color: $cor-texto-secondary;
+    }
+
+    &__bgImagens{
+        display: flex;
+    }
+    &__intro {
+        margin-right: -1100px;
+        margin-top: -270px;
+        z-index: -1;
+    }
+    &__mockups {
+        margin-right: -270px;
+        margin-top: -120px;
+        z-index: 1;
+    }
+}
