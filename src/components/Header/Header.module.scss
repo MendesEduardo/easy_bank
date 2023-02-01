@@ -12,8 +12,10 @@
     &__imagem {
         height: 25px;
     }
+    button {
+        display: none;
+    }
 }
 
-#bnt {
-    display: none;
+@media (min-width: 992px) {
 }

@@ -30,7 +30,7 @@ function NavBar() {
                 </ul>
             </nav>
             <div className="menu">
-                <button id="menu" onClick={ handleClick }>&#9776;</button>
+                <div id="menu" onClick={ handleClick }>&#9776;</div>
             </div> 
         </>
     );
