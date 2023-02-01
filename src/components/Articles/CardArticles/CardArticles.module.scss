@@ -7,7 +7,7 @@
 
     li {
         height: 400px;
-        margin: 0 1em 0 -2em;
+        margin: -3em 1em 0 -2em;
     }
 
     &__imagem {
@@ -40,5 +40,13 @@
         font-size: 18px;
         width: 270px;
         padding: 0 1em;
+    }
+}
+
+@media (min-width: 800px) {
+    .cardArticles {
+        li {
+            margin-top: 0em;
+        }
     }
 }

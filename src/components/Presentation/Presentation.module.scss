@@ -2,12 +2,28 @@
 
 .section {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    text-align: center;
+    flex-direction: column-reverse;
 
     &__presentation {
-        margin-top: 5em;
         color: $Black;
+        width: 300px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0 1.7em;
+        h1 {
+            font-size: 42px;
+            margin-bottom: -0.1em;
+        }
+        p {
+            font-size: 20px;
+            width: 320px;
+            text-align: justify;
+        }
     }
+
     &__title {
         width: 400px;
         font-size: 52px;
@@ -23,15 +39,63 @@
 
     &__bgImagens{
         display: flex;
+        margin-left: -10em;
     }
     &__intro {
-        margin-right: -1100px;
-        margin-top: -270px;
+        margin-right: -600px;
+        margin-top: -200px;
         z-index: -1;
+        width: 800px;
+        height: 600px;
     }
     &__mockups {
-        margin-right: -270px;
-        margin-top: -120px;
+        margin-top: -150px;
         z-index: 1;
+        width: 350px;
+        height: 500px;
+    }
+}
+
+@media (min-width: 800px) {
+    .section {
+        flex-direction: row;
+
+        &__presentation {
+            margin-top: 5em;
+            color: $Black;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 0 1.7em;
+            width: 400px;
+            h1 {
+                font-size: 50px;
+            }
+            p {
+                font-size: 20px;
+                text-align: justify;
+                width: auto;
+            }
+        }
+
+        &__bgImagens {
+            display: flex;
+        }
+
+        &__intro {
+            margin-right: -1100px;
+            margin-top: -270px;
+            z-index: -1;
+            width: auto;
+            height: auto;
+        }
+
+        &__mockups {
+            margin-right: -270px;
+            margin-top: -120px;
+            z-index: 1;
+            width: auto;
+            height: auto;
+        }
     }
 }

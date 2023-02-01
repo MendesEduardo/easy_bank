@@ -1,20 +1,24 @@
 @import "../../../styles/variables";
 
-.start_image {
-    color: #FFF;
-    padding: 2em;
-    filter: brightness(100);
-}
-
-.start {
-    padding: 1em;
-    
-    img {
-        margin-left: 1em;
+.footerS {
+    .start_image {
+        color: #FFF;
+        padding: 2em;
+        width: 150px;
+        height: 30px;
+        filter: brightness(100);
     }
-    
-    a:hover {
-        cursor: pointer;
-        filter: brightness(0);
+
+    .start {
+        padding: 1em;
+
+        img {
+            margin-left: 1em;
+        }
+
+        a:hover {
+            cursor: pointer;
+            filter: brightness(0);
+        }
     }
 }

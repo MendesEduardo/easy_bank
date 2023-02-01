@@ -3,6 +3,7 @@
 .Articles {
     line-height: 1em;
     display: flex;
+    flex-direction: column;
     margin-left: 1em;
 }
 
@@ -12,5 +13,11 @@
         font-size: 42px;
         font-weight: 300;
         color: $Black;
+    }
+}
+
+@media (min-width: 800px) {
+    .Articles {
+        flex-direction: row;
     }
 }

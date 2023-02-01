@@ -1,27 +1,38 @@
 import React from 'react';
-import styles from './NavBar.module.scss';
+import './NavBar.scss';
 
 function NavBar() {
+    const handleClick = () => {
+        const navbar = document.getElementById("navbar")
+
+        navbar.classList.toggle("open")
+    }
+
     return (
-        <nav className={styles.navbar}>
-            <ul>
-                <li>
-                    <a href='/'>Home</a>
-                </li>
-                <li>
-                    <a href='/'>About</a>
-                </li>
-                <li>
-                    <a href='/'>Contact</a>
-                </li>
-                <li>
-                    <a href='/'>Blog</a>
-                </li>
-                <li>
-                    <a href='/'>Careers</a>
-                </li>
-            </ul>
-        </nav>
+        <>
+            <nav id="navbar">
+                <ul>
+                    <li>
+                        <a href='/'>Home</a>
+                    </li>
+                    <li>
+                        <a href='/'>About</a>
+                    </li>
+                    <li>
+                        <a href='/'>Contact</a>
+                    </li>
+                    <li>
+                        <a href='/'>Blog</a>
+                    </li>
+                    <li>
+                        <a href='/'>Careers</a>
+                    </li>
+                </ul>
+            </nav>
+            <div className="menu">
+                <button id="menu" onClick={ handleClick }>&#9776;</button>
+            </div> 
+        </>
     );
 };
 

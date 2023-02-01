@@ -9,7 +9,7 @@ import youtube from '../icons/icon-youtube.svg';
 
 function FooterStart() {
     return (
-        <>
+        <div className={styles.footerS}>
             <img className={styles.start_image} src={logo} alt='Easybank' />
             <div className={styles.start}>
                 <a href='/'>
@@ -28,7 +28,7 @@ function FooterStart() {
                     <img src={instagram} alt='Instagram' />
                 </a>
             </div>
-        </>
+        </div>
     );
 };
 

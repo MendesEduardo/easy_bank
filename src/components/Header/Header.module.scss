@@ -1,9 +1,9 @@
 @import "../../styles/variables";
 
 .header {
-    z-index: 100;
+    z-index: 10;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     background: $White;
     height: 60px;
@@ -12,4 +12,8 @@
     &__imagem {
         height: 25px;
     }
+}
+
+#bnt {
+    display: none;
 }

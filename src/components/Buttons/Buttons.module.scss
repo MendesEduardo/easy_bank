@@ -20,3 +20,11 @@
         opacity: 0.8;
     }
 }
+
+@media (min-width: 800px) {
+    .Button {
+        button {
+            display: inline-table;
+        }
+    }
+}
